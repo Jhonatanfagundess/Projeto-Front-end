@@ -29,3 +29,11 @@ form input, form button {
     width: 100%;
     max-width: 300px;
 }
+
+#itensCarrinho div {
+    margin-bottom: 0.5rem;
+}
+
+#historico li {
+    margin-bottom: 0.3rem;
+}
