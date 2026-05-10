@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raízes Express</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Raízes Express</h1>
+        <nav>
+            <a href="#cardapio">Cardápio</a>
+            <a href="#promocoes">Promoções</a>
+            <a href="#perfil">Perfil</a>
+        </nav>
+    </header>
+
+    <!-- Login / Cadastro -->
+    <section id="login">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="email" placeholder="E-mail" required>
+            <input type="password" placeholder="Senha" required>
+            <button type="submit">Entrar</button>
+        </form>
+        <p>Não tem conta? <a href="#cadastro">Cadastre-se</a></p>
+    </section>
+
+    <section id="cadastro">
+        <h2>Cadastro</h2>
+        <form id="cadastroForm">
+            <input type="text" placeholder="Nome completo" required>
+            <input type="email" placeholder="E-mail" required>
+            <input type="tel" placeholder="Telefone" required>
+            <input type="password" placeholder="Senha" required>
+            <label>
+                <input type="checkbox" required>
+                Aceito os termos de privacidade (LGPD)
+            </label>
+            <button type="submit">Cadastrar</button>
+        </form>
+    </section>
+
+    <!-- Cardápio -->
+    <section id="cardapio">
+        <h2>Cardápio</h2>
+        <div id="produtos">
+            <!-- Produtos serão inseridos via JS -->
+        </div>
+    </section>
+
+    <!-- Promoções -->
+    <section id="promocoes">
+        <h2>Promoções</h2>
+        <p>Aplicar cupom promocional:</p>
+        <input type="text" id="cupom" placeholder="Digite seu cupom">
+        <button id="aplicarCupom">Aplicar</button>
+        <p id="resultadoCupom"></p>
+    </section>
+
+    <!-- Perfil do usuário -->
+    <section id="perfil">
+        <h2>Perfil</h2>
+        <form id="perfilForm">
+            <input type="text" placeholder="Nome">
+            <input type="email" placeholder="E-mail">
+            <input type="tel" placeholder="Telefone">
+            <button type="submit">Atualizar</button>
+        </form>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
